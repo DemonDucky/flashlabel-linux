@@ -1,0 +1,6 @@
+#!/bin/bash
+# CUPS filter: pdftolabel
+# Installed at: /usr/lib/cups/filter/pdftolabel
+# Called by CUPS as: pdftolabel job-id user title copies options [file]
+
+exec /usr/local/bin/pdf_to_tspl.py "$@"
